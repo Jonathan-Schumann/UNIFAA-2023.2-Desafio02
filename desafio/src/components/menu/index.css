@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300&display=swap");
+
+table.table {
+    box-shadow: 0 0 10px 0 rgb(50 50 50 / 82%);
+}
+
+table.table>thead>tr th {
+    background-color: #eee;
+}
+
+body{
+    height: 100vh;
+}
+
+nav.menu-lateral{
+    width: 80px;
+    height: 100%;
+    background-color: #476CDA;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #4782da;
+    
+    position: fixed;
+    overflow: hidden;
+    transition: .5s;
+    z-index: 5;
+}
+
+nav.menu-lateral.expandir{
+    width: 280px;
+    margin-right: 330px;
+}
+
+
+nav.menu-lateral.expandir ul li.item-menu:hover{
+    margin-left: -20px;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+    margin-top: -20px;
+}
+
+.btn-expandir > i{
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;    
+}
+
+ul li.item-menu{
+    transition: 1s;
+}
+
+ul li.item-menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 65px;
+    transition: 1s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 35px;
+    opacity: 1;
+    
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 25px;
+    margin-left: -20px;
+}
+
+#btn-sair{
+    margin-top: 220px;
+}
+
+div.container.afastar{
+    margin-left: 330px;
+    transition: .5s;
+}
+
+.container{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
